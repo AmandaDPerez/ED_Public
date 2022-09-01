@@ -114,6 +114,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#applying-filters" id="toc-applying-filters" class="nav-link" data-scroll-target="#applying-filters">Applying Filters</a></li>
   <li><a href="#dataset-information" id="toc-dataset-information" class="nav-link" data-scroll-target="#dataset-information">Dataset Information</a></li>
   <li><a href="#creating-variables-centered-variables-for-mlm" id="toc-creating-variables-centered-variables-for-mlm" class="nav-link" data-scroll-target="#creating-variables-centered-variables-for-mlm">Creating Variables &amp; Centered Variables for MLM</a></li>
+  <li><a href="#running-the-model" id="toc-running-the-model" class="nav-link" data-scroll-target="#running-the-model">RUNNING THE MODEL</a></li>
   <li><a href="#model-summary-comparisons" id="toc-model-summary-comparisons" class="nav-link" data-scroll-target="#model-summary-comparisons">Model Summary Comparisons</a></li>
   <li><a href="#table-of-estimates-with-95-ci" id="toc-table-of-estimates-with-95-ci" class="nav-link" data-scroll-target="#table-of-estimates-with-95-ci">Table of estimates with 95% CI</a></li>
   <li><a href="#odds-ratios" id="toc-odds-ratios" class="nav-link" data-scroll-target="#odds-ratios">Odds Ratios</a></li>
@@ -202,7 +203,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="dataset-information" class="level2">
 <h2 class="anchored" data-anchor-id="dataset-information">Dataset Information</h2>
-<p>Our filters result in dataset/group n’s consistent with the previously puvlished model.</p>
+<p>Our filters result in dataset/group n’s consistent with the previously published model.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(my.data) <span class="co"># Sample Size</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -318,7 +319,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb13-86"><a href="#cb13-86" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-87"><a href="#cb13-87" aria-hidden="true" tabindex="-1"></a>my.data<span class="sc">$</span>miss_S_Cons_SD1_D_FY_1617_RGC[<span class="fu">is.na</span>(my.data<span class="sc">$</span>S_Cons_SD1_D_FY_1617_RGC)] <span class="ot">&lt;-</span> <span class="dv">0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>##RUNNING THE MODEL</p>
+</section>
+<section id="running-the-model" class="level2">
+<h2 class="anchored" data-anchor-id="running-the-model">RUNNING THE MODEL</h2>
 <p><strong>Regr Type:</strong> Mixed-effects REML regression;</p>
 <p><strong>RE structure:</strong> independent;</p>
 <p><strong>DepVar:</strong> S_Cons_SD1_D_FY_1718;</p>
